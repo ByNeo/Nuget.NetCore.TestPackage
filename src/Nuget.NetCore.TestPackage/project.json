@@ -1,8 +1,10 @@
-﻿{
-  "version": "1.0.0-*",
+{
+  "version": "0.1.0-beta01-*",
 
   "dependencies": {
-    "NETStandard.Library": "1.6.0"
+    "MongoDB.Driver": "2.4.4",
+    "NETStandard.Library": "1.6.1",
+    "NLog": "5.0.0-beta08"
   },
 
   "frameworks": {
