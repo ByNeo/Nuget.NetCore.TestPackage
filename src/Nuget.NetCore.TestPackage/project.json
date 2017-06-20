@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0-beta01-*",
+  "version": "0.1.0-beta04-*",
 
   "dependencies": {
     "MongoDB.Driver": "2.4.4",
@@ -8,8 +8,6 @@
   },
 
   "frameworks": {
-    "netstandard1.6": {
-      "imports": "dnxcore50"
-    }
+    "netstandard1.5": { }
   }
 }
