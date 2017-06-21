@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>Nuget.NetCore.TestPackage</id>
+        <version>0.1.0-beta01.4</version>
+        <title>Nuget.NetCore.TestPackage</title>
+        <authors>Kaan HAS</authors>
+        <owners>KaanH</owners>
+        <licenseUrl>https://raw.githubusercontent.com/ByNeo/Nuget.NetCore.TestPackage/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/ByNeo/Nuget.NetCore.TestPackage</projectUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <description>Test package for Nuget.</description>
+        <summary />
+        <copyright>KaanH</copyright>
+        <tags>testpackage, byneo, kaanh</tags>
+        <dependencies>
+            <group targetFramework=".NETStandard1.5">
+                <dependency id="MongoDB.Driver" version="2.4.4" />
+                <dependency id="NLog" version="5.0.0-beta08" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="..\..\Documents\Visual Studio 2015\Projects\Nuget.NetCore.TestPackage\src\Nuget.NetCore.TestPackage\bin\Release\netstandard1.5\Nuget.NetCore.TestPackage.dll" target="lib\netstandard1.5\Nuget.NetCore.TestPackage.dll" />
+    </files>
+</package>
