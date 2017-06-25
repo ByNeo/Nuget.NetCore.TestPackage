@@ -4,18 +4,3 @@ before_build:
 - cmd: dotnet restore
 build:
   verbosity: minimal
-deploy:  
-- provider: NuGet
-  server: https://www.myget.org/F/nugetnetcoretestpackage/api/v2/package
-  api_key:
-    secure: TWVKxbiZneCbY9ckMQxFhV+jhSir05VD2ZoX9lMzfSPCbjUdLo/FUZh3hemWcgGb
-  skip_symbols: true
-  on:
-    branch: master
-- provider: NuGet
-  name: production
-  api_key:
-    secure: 8cq3iy0GTnLEqsFVoZnequXlQ/QlziwbxUJyv4IyeWZpaThooE9TE/RlRpcnddX8
-  on:
-    branch: master
-    appveyor_repo_tag: false
