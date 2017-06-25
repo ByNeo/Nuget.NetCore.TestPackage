@@ -4,3 +4,4 @@ before_build:
 - cmd: dotnet restore
 build:
   verbosity: minimal
+
