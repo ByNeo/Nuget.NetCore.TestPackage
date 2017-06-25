@@ -1,2 +1,2 @@
 # Nuget.NetCore.TestPackage
-Test package for Nuget.
+Test package for Nuget..
