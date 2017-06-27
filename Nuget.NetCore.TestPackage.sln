@@ -12,6 +12,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Nuget.NetCore.TestPackage", "src\Nuget.NetCore.TestPackage\Nuget.NetCore.TestPackage.xproj", "{DA08E4E1-8236-4F4F-AB7D-E7066D3CABBD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{B47E7FD9-51E4-4E20-BFC6-96BAA5D1AA6D}"
+	ProjectSection(SolutionItems) = preProject
+		.build\appveyor.yml = .build\appveyor.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,5 +33,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DA08E4E1-8236-4F4F-AB7D-E7066D3CABBD} = {178524B8-C1AA-473B-8A37-5930064B8ABC}
+		{B47E7FD9-51E4-4E20-BFC6-96BAA5D1AA6D} = {A16EC73B-9430-4F64-8BC4-5F4F489D5114}
 	EndGlobalSection
 EndGlobal

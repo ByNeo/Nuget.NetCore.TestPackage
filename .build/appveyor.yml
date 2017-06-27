@@ -1,0 +1,19 @@
+version: 1.0.{build}
+configuration: Release
+build_script:
+- cmd: >-
+    dotnet restore
+
+    dotnet pack ".\src\Nuget.NetCore.TestPackage" --configuration Release
+artifacts:
+- path: src\Nuget.NetCore.TestPackage\bin\Release\*.nupkg
+  name: releasePackages
+deploy:
+- provider: NuGet
+  server: https://www.myget.org/F/nugetnetcoretestpackage/api/v2/package
+  api_key:
+    secure: TWVKxbiZneCbY9ckMQxFhV+jhSir05VD2ZoX9lMzfSPCbjUdLo/FUZh3hemWcgGb
+  skip_symbols: true
+  artifact: /.*\.nupkg/
+  on:
+    branch: master
