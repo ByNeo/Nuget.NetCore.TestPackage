@@ -1,12 +1,9 @@
-version: 1.0.{build}
+version: 1.0.0-{build}
 configuration: Release
 build_script:
-- cmd: >-
-    dotnet restore
-
-    dotnet pack ".\src\Nuget.NetCore.TestPackage" --configuration Release
+	- ps: build\.build.ps1
 artifacts:
-- path: src\Nuget.NetCore.TestPackage\bin\Release\*.nupkg
+- path: artifacts\*.nupkg
   name: releasePackages
 deploy:
 - provider: NuGet
