@@ -9,7 +9,7 @@ build_script:
 - ps: .build\build.ps1
 
 test_script:
-- .\codecov -f "coverage.xml -t 0c9fa180-5ede-4817-af50-4af9ec433510
+- ps: .\codecov -f "coverage.xml -t 0c9fa180-5ede-4817-af50-4af9ec433510
 
 
 artifacts:
