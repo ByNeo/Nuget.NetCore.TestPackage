@@ -9,7 +9,6 @@ build_script:
 - ps: .build\build.ps1
 
 test_script:
-- OpenCover.Console.exe -register:user -target:"%xunit20%\xunit.console.x86.exe" -targetargs:".\src\Nuget.NetCore.TestPackage\bin\Debug\netstandard1.6\Nuget.NetCore.TestPackage.dll -noshadow" -filter:"+[UnitTestTargetProject*]* -[MyUnitTests*]*" -output:".\coverage.xml"
 - codecov -f "coverage.xml -t 0c9fa180-5ede-4817-af50-4af9ec433510
 
 
