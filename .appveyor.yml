@@ -1,10 +1,21 @@
 version: 1.0.0-{build}
 configuration: Release
+
+before_build:
+- choco install opencover.portable
+- choco install codecov
+
 build_script:
 - ps: .build\build.ps1
+
+test_script:
+- codecov -f "coverage.xml -t 0c9fa180-5ede-4817-af50-4af9ec433510
+
+
 artifacts:
 - path: artifacts\*.nupkg
   name: releasePackages
+
 deploy:
 - provider: NuGet
   server: https://www.myget.org/F/nugetnetcoretestpackage/api/v2/package
